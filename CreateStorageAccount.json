@@ -23,7 +23,7 @@
             "defaultValue": "Hot"
         },
         "supportsHttpsTrafficOnly": {
-            "type": "bool",
+            "type": "boolean",
             "defaultValue": true
         }
     },
