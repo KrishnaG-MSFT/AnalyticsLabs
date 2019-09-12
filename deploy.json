@@ -5,7 +5,7 @@
         "location":"centralus",
         "storageAccountName":"cheprahdinsight",
         "accountType":"Standard_RAGRS",
-        "kind":"type":"StorageV2",
+        "kind":"StorageV2",
         "accessTier":"Hot",
         "supportsHttpsTrafficOnly":"true"
            },
