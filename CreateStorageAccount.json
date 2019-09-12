@@ -3,21 +3,27 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
+            "type" : "string"
             "defaultValue": "centralus"
         },
         "storageAccountName": {
+            "type" : "string"
             "defaultValue": "cheprahdinsight"
         },
         "accountType": {
+            "type" : "string"
             "defaultValue": "Standard_RAGRS"
         },
         "kind": {
+            "type" : "string"
             "defaultValue": "StorageV2"
         },
         "accessTier": {
+            "type" : "string"
             "defaultValue": "Hot"
         },
         "supportsHttpsTrafficOnly": {
+            "type" : "bool"
             "defaultValue": "true"
         }
     },
