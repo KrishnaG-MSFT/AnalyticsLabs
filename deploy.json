@@ -1,0 +1,32 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location":"centralus",
+        "storageAccountName":"cheprahdinsight",
+        "accountType":"type": "Standard_RAGRS",
+        "kind":"type": "StorageV2",
+        "accessTier":"type": "Hot",
+        "supportsHttpsTrafficOnly":"type": "true"
+           },
+    "variables": {},
+    "resources": [
+        {
+            "name": "[parameters('storageAccountName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-04-01",
+            "location": "[parameters('location')]",
+            "properties": {
+                "accessTier": "[parameters('accessTier')]",
+                "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]"
+            },
+            "dependsOn": [],
+            "sku": {
+                "name": "[parameters('accountType')]"
+            },
+            "kind": "[parameters('kind')]",
+            "tags": {}
+        }
+    ],
+    "outputs": {}
+}
